@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>View Resume | Hammad</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #252525; font-family: Arial, sans-serif; }
+    .toolbar {
+      height: 56px;
+      background: #111318;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      gap: 12px;
+    }
+    .toolbar span { font-size: 14px; font-weight: bold; }
+    .download {
+      background: #d7ff6e;
+      color: #111;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      height: calc(100dvh - 56px);
+      border: none;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <span>My Resume (PDF)</span>
+    <a class="download" href="Hammad_Haider_Resume.pdf" download="Hammad_Haider_Resume.pdf">
+      ↓ Download PDF
+    </a>
+  </div>
+  <iframe src="Hammad_Haider_Resume.pdf" title="Resume PDF"></iframe>
+</body>
+</html>
