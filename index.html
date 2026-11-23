@@ -111,6 +111,64 @@ footer{padding:28px 0;color:#676a72;font-size:12px;display:flex;justify-content:
   text-decoration: none;
   z-index: 10000;
 }
+
+
+/* Technical Skills Section */
+.technical-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.tech-skill-card {
+  background: linear-gradient(145deg, #151b19, #0b0e0d);
+  border: 1px solid #315a40;
+  border-radius: 18px;
+  padding: 30px 18px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tech-skill-card:hover {
+  transform: translateY(-6px);
+  border-color: #a3ff12;
+}
+
+.tech-skill-icon {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.tech-skill-card h3 {
+  color: #ffffff;
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.tech-skill-card p {
+  color: #b5b8b6;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+
+/* Responsive Skills Cards */
+@media (max-width: 900px) {
+  .technical-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .technical-skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -118,7 +176,7 @@ footer{padding:28px 0;color:#676a72;font-size:12px;display:flex;justify-content:
   <div class="container nav-inner">
     <a href="#home" class="brand">Hammad<span>.</span></a>
     <nav class="links">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#education">Education</a>
+      <a href="#about">About</a><a href="#technical-skills">Skills</a>><a href="#work">Work</a><a href="#education">Education</a>
     </nav>
     <a class="nav-cta" href="#contact">Contact ↗</a>
   </div>
@@ -150,22 +208,13 @@ footer{padding:28px 0;color:#676a72;font-size:12px;display:flex;justify-content:
     <p>Detail-oriented aspiring Data Analyst with skills in Excel, SQL, Power BI, Python, data cleaning, exploratory data analysis, and dashboard development. Focused on turning complex datasets into meaningful business insights.</p>
   </div>
   <div class="about-grid">
-    <div class="card" id="skills">
+    <div class="card">
       <p>I'm a Computer Science graduate specializing in Data Science, with a strong interest in Data Analytics and Business Intelligence. I enjoy analyzing datasets, identifying trends, and building interactive dashboards that help businesses make data-driven decisions. My focus is on developing practical skills through real-world analytics projects.</p>
-      <div class="skills">
-        
-<span class="skill">Microsoft Excel</span>
-<span class="skill">SQL</span>
-<span class="skill">Power BI</span>
-<span class="skill">Python</span>
-<span class="skill">Data Cleaning</span>
-<span class="skill">Data Analysis</span>
-<span class="skill">Data Visualization</span>
-<span class="skill">PivotTables & PivotCharts</span>
-<span class="skill">Dashboard Development</span>
-<span class="skill">MySQL</span>
+     
+<p style="margin-top:18px;">
+  My goal is to begin my career as a Data Analyst, applying analytical thinking and technical skills to solve real-world business problems. I am continuously improving my knowledge through hands-on projects and practical learning.
+</p>
 
-      </div>
     </div>
     <div class="stats">
       <div class="stat"><strong>1+</strong><span>Projects Built</span></div>
@@ -175,6 +224,51 @@ footer{padding:28px 0;color:#676a72;font-size:12px;display:flex;justify-content:
     </div>
   </div>
 </div>
+</section>
+
+<section id="technical-skills">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker">02 — Skills</div>
+        <h2>Technical Skills</h2>
+      </div>
+      <p>Tools and technologies I use for data analysis, visualization, and business insights.</p>
+    </div>
+    
+<div class="technical-skills-grid">
+  
+<div class="tech-skill-card">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/excel/excel-original.svg" alt="Excel Logo" class="tech-skill-icon">
+  <h3>Data Analysis</h3>
+  <p>Microsoft Excel</p>
+  <p>PivotTables, Charts &amp; Dashboards</p>
+</div>
+
+<div class="tech-skill-card">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL Logo" class="tech-skill-icon">
+  <h3>SQL &amp; Databases</h3>
+  <p>SQL, MySQL</p>
+  <p>Data Querying, Extraction &amp; Management</p>
+</div>
+
+<div class="tech-skill-card">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powerbi/powerbi-original.svg" alt="Power BI Logo" class="tech-skill-icon">
+  <h3>Data Visualization</h3>
+  <p>Microsoft Power BI</p>
+  <p>Interactive Reports &amp; Dashboards</p>
+</div>
+
+<div class="tech-skill-card">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python Logo" class="tech-skill-icon">
+  <h3>Programming &amp; Data</h3>
+  <p>Python</p>
+  <p>Data Cleaning, Analysis &amp; Visualization</p>
+</div>
+
+</div>
+
+  </div>
 </section>
 
 <section id="work">
