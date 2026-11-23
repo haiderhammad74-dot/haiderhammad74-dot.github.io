@@ -77,6 +77,40 @@ footer{padding:28px 0;color:#676a72;font-size:12px;display:flex;justify-content:
 @media(max-width:520px){
  h1{font-size:47px}.lead{font-size:16px}.stats{grid-template-columns:1fr}.card{padding:22px}section{padding:80px 0}
 }
+  .dashboard-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dashboard-popup:target {
+  display: flex;
+}
+
+.dashboard-popup img {
+  max-width: 95%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  z-index: 10000;
+}
 </style>
 </head>
 <body>
@@ -163,7 +197,7 @@ footer{padding:28px 0;color:#676a72;font-size:12px;display:flex;justify-content:
       and dynamic slicers to track KPIs, identify top-performing
       products, and visualize monthly sales trends.
     </p>
-    <a href="dashboard.png" target="_blank" rel="noopener noreferrer">
+    <a href="#dashboard-popup">
     <img src="dashboard.png" alt="E-Commerce Sales Performance Dashboard" style="width:100%;max-width:400px;height:auto;border-radius:12px;display:block;margin-top:20px;margin-bottom:15px;">
       </a>
     <a href="https://github.com/haiderhammad74-dot/ecommerce-sales-performance-dashboard-excel"
@@ -174,6 +208,10 @@ footer{padding:28px 0;color:#676a72;font-size:12px;display:flex;justify-content:
   </div>
   <div class="arrow">↗</div>
 </article>
+  <div id="dashboard-popup" class="dashboard-popup">
+  <a href="#work" class="popup-close">&times;</a>
+  <img src="dashboard.png" alt="Full-size E-Commerce Dashboard">
+</div>
  <article class="project">
     <div class="project-num">02</div>
     <div>
